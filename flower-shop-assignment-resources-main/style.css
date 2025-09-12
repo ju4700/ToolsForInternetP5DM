@@ -157,7 +157,60 @@ body {
   justify-content: center;
   align-items: center;
   background: #E554730D;
-  padding: 100px 340px;
+  padding: 100px 240px;
+  text-align: center;
+}
+
+.hot-deal-content {
+  margin-left: -20px;
+  margin-right: 40px;
+}
+
+.hot-deal-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #272727;
+  margin-bottom: 24px;
+}
+
+.hot-deal-description {
+  margin: 25px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(39, 39, 39, 0.6);
+  max-width: 594px;
+}
+
+.insta{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.insta-title {
+  color: #272727;
+  font-size: 40px;
+  font-family: Lato;
+  font-weight: 800;
+  word-wrap: break-word;
+}
+
+.insta-description {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  line-height: 1.67;
+  margin-top: 16px;
+  max-width: 594px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insta-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 240px;
+  gap: 24px;
 }
 
 .footer {
