@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Dekho</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar max-w-[1440px] mx-auto p-6 mb-10">
+        <div class="navbar-start">
+            <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+            </div>
+            <div class="justify-start text-black text-2xl lg:text-4xl font-bold font-['Poppins'] whitespace-nowrap">Bike Dekho</div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-medium font-['Poppins']">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn w-22 h-10 lg:w-40 lg:h-16 bg-[#E76F51] rounded-[5px] text-l md:text-xl text-white">Login</a>
+        </div>
+    </div>
+    <div class="lg:max-w-[1400px] mx-auto p-6 bg-red-400/10 rounded-[5px] max-lg:-mt-10">
+        <div class="flex max-lg:flex-col lg:justify-between max-lg:m-[25px] lg:m-[100px] items-center">
+            <div>
+                <h1 class="text-4xl md:text-6xl text-black font-bold font-['Poppins']">Ride-on R15 V4 with Smile</h1>
+                <p class="text-xl text-black/80 font-light font-['Poppins'] my-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="btn w-40 h-16 bg-[#E76F51] rounded-[5px] text-xl text-white">Purchase</button>
+            </div>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img
+                    src="./images/slider/bike1.png"
+                    class="w-406px" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img
+                    src="./images/slider/bike2.png"
+                    class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img
+                    src="./images/slider/bike3.png"
+                    class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img
+                    src="./images/slider/bike4.png"
+                    class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lg:max-w-[1440px] mx-auto p-6 m-10 mt-25">
+        <div class="text-center text-black text-5xl font-semibold font-['Poppins']">Featured Bikes In This Year</div>
+        <div class="text-center text-red-400 text-sm font-semibold font-['Poppins']">Best bike collection</div>
+        <div class="flex flex-col gap-10 lg:flex-row justify-evenly items-center mt-10">
+            <img class="w-100 h-auto max-sm:w-72 max-sm:h-60 lg:w-72 lg:h-60 mix-blend-luminosity" src="./images/others/feature-bike.png" />
+            <img class="w-100 h-auto max-sm:w-72 max-sm:h-60 lg:w-72 lg:h-60" src="./images/others/feature-bike.png" />
+            <img class="w-100 h-auto max-sm:w-72 max-sm:h-60 lg:w-72 lg:h-60 mix-blend-luminosity" src="./images/others/feature-bike.png" />
+        </div>
+    </div>
+    <div class="lg:max-w-[1400px] mx-auto p-6 m-10 mt-25">
+        <div class="text-center justify-center text-slate-900 text-5xl font-semibold font-['Poppins'] capitalize">latest News</div>
+        <div class="flex flex-col gap-5 lg:flex-row justify-center items-center mt-10">
+            <div class="p-5 bg-white rounded-[5px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.15)] inline-flex justify-start items-start gap-2.5">
+                <div class="w-80 sm:w-auto lg:w-80 inline-flex max-sm:flex-col lg:flex-col max-lg:flex-row sm:flex-row justify-start items-start gap-10 overflow-hidden">
+                    <img class="w-80 h-64 rounded-[10px]" src="./images/others/latest1.png" />
+                    <div>
+                        <div class="self-stretch flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                            <div class="self-stretch justify-start text-zinc-900 text-3xl font-semibold font-['Poppins'] leading-10">Ducati XDIAVEL S-73</div>
+                            <div class="self-stretch justify-start text-neutral-500 text-base font-normal font-['Poppins'] leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</div>
+                        </div>
+                        <div class="w-40 p-3.5 bg-red-400 rounded-[5px] inline-flex justify-center items-center gap-2.5">
+                            <div class="flex-1 text-center justify-start text-white text-lg font-medium font-['Poppins']">Read More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 bg-white rounded-[5px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.15)] inline-flex justify-start items-start gap-2.5">
+                <div class="w-80 sm:w-auto lg:w-80 inline-flex max-sm:flex-col lg:flex-col max-lg:flex-row sm:flex-row justify-start items-start gap-10 overflow-hidden">
+                    <img class="w-80 h-64 rounded-[10px]" src="./images/others/latest2.png" />
+                    <div>
+                        <div class="self-stretch flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                            <div class="self-stretch justify-start text-zinc-900 text-3xl font-semibold font-['Poppins'] leading-10">Ducati XDIAVEL S-73</div>
+                            <div class="self-stretch justify-start text-neutral-500 text-base font-normal font-['Poppins'] leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</div>
+                        </div>
+                        <div class="w-40 p-3.5 rounded-[5px] outline outline-1 outline-offset-[-1px] outline-red-400 inline-flex justify-center items-center gap-2.5">
+                            <div class="flex-1 text-center justify-start text-red-400 text-lg font-medium font-['Poppins']">Read More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 bg-white rounded-[5px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.15)] inline-flex justify-start items-start gap-2.5">
+                <div class="w-80 sm:w-auto lg:w-80 inline-flex max-sm:flex-col lg:flex-col max-lg:flex-row sm:flex-row justify-start items-start gap-10 overflow-hidden">
+                    <img class="w-80 h-64 rounded-[10px]" src="./images/others/latest3.png" />
+                    <div>
+                        <div class="self-stretch flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                            <div class="self-stretch justify-start text-zinc-900 text-3xl font-semibold font-['Poppins'] leading-10">Ducati XDIAVEL S-73</div>
+                            <div class="self-stretch justify-start text-neutral-500 text-base font-normal font-['Poppins'] leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</div>
+                        </div>
+                        <div class="w-40 p-3.5 rounded-[5px] outline outline-1 outline-offset-[-1px] outline-red-400 inline-flex justify-center items-center gap-2.5">
+                            <div class="flex-1 text-center justify-start text-red-400 text-lg font-medium font-['Poppins']">Read More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lg:max-w-[1440px] mx-auto p-6 m-10 mt-25">
+        <div class="text-center"><span class="text-slate-900 text-5xl font-semibold font-['Poppins']">Happy </span><span class="text-red-400 text-5xl font-semibold font-['Poppins']">Clients says</span></div>
+        <div class="flex flex-col gap-5 lg:flex-row justify-center items-center mt-10">
+            <div class="px-9 py-10 bg-white rounded-[5px] outline outline-1 outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-center gap-7">
+                <div class="w-36 h-36 relative">
+                    <img class="w-36 h-36 left-0 top-0 absolute rounded-full border border-stone-300" src="./images/others/user-1.png" />
+                </div>
+                <div class="flex flex-col justify-start items-center gap-3.5 overflow-hidden">
+                    <div class="text-center justify-start text-neutral-500 text-base font-normal font-['Poppins'] leading-relaxed tracking-tight">Slate helps you see how <br/>many more days you need <br/>to work to reach your financial <br/>goal for the month and year.</div>
+                    <div class="inline-flex justify-start items-start gap-[5px] overflow-hidden">
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-half-stroke-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                    </div>
+                    <div class="justify-start text-sky-500 text-sm font-semibold font-['Poppins'] leading-normal tracking-tight">Regina Miles</div>
+                    <div class="justify-start text-slate-800 text-sm font-semibold font-['Poppins'] leading-normal tracking-tight">Banker</div>
+                </div>
+            </div>
+            <div class="px-9 py-10 bg-white rounded-[5px] outline outline-1 outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-center gap-7">
+                <div class="w-36 h-36 relative">
+                    <img class="w-36 h-36 left-0 top-0 absolute rounded-full border border-stone-300" src="./images/others/user-1.png" />
+                </div>
+                <div class="flex flex-col justify-start items-center gap-3.5 overflow-hidden">
+                    <div class="text-center justify-start text-neutral-500 text-base font-normal font-['Poppins'] leading-relaxed tracking-tight">Slate helps you see how <br/>many more days you need <br/>to work to reach your financial <br/>goal for the month and year.</div>
+                    <div class="inline-flex justify-start items-start gap-[5px] overflow-hidden">
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-half-stroke-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                    </div>
+                    <div class="justify-start text-sky-500 text-sm font-semibold font-['Poppins'] leading-normal tracking-tight">Regina Miles</div>
+                    <div class="justify-start text-slate-800 text-sm font-semibold font-['Poppins'] leading-normal tracking-tight">Banker</div>
+                </div>
+            </div>
+            <div class="px-9 py-10 bg-white rounded-[5px] outline outline-1 outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-center gap-7">
+                <div class="w-36 h-36 relative">
+                    <img class="w-36 h-36 left-0 top-0 absolute rounded-full border border-stone-300" src="./images/others/user-1.png" />
+                </div>
+                <div class="flex flex-col justify-start items-center gap-3.5 overflow-hidden">
+                    <div class="text-center justify-start text-neutral-500 text-base font-normal font-['Poppins'] leading-relaxed tracking-tight">Slate helps you see how <br/>many more days you need <br/>to work to reach your financial <br/>goal for the month and year.</div>
+                    <div class="inline-flex justify-start items-start gap-[5px] overflow-hidden">
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                        <div class="w-6 h-6 relative overflow-hidden">
+                            <img src="./images/icons/star-half-stroke-solid.svg" class="w-5 h-5 absolute" />
+                        </div>
+                    </div>
+                    <div class="justify-start text-sky-500 text-sm font-semibold font-['Poppins'] leading-normal tracking-tight">Regina Miles</div>
+                    <div class="justify-start text-slate-800 text-sm font-semibold font-['Poppins'] leading-normal tracking-tight">Banker</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lg:max-w-[1440px] mx-auto p-6 m-10 mt-25">
+        <div class="flex max-lg:flex-col lg:justify-between max-lg:m-[25px] lg:m-[100px] items-center gap-20">
+            <img class="relative overflow-hidden" src="./images/others/faq.png" />
+            <div class="flex flex-col gap-5 sm:w-[552px]">
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-semibold">What are the most important things I should know about riding a bike?</div>
+                    <div class="collapse-content text-sm">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold">How can I tell if my helmet is old and I need a new one?</div>
+                    <div class="collapse-content text-sm">Check the manufacturer's guidelines for the lifespan of your helmet. If you notice any cracks, dents, or significant wear, it's time for a replacement. Additionally, if you've been in an accident, you should replace your helmet regardless of its age.</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold">My bike has been in storage is it safe to ride?</div>
+                    <div class="collapse-content text-sm">Before riding a bike that has been in storage, it's important to check a few key things: Inspect the tires for proper inflation and any signs of damage. Check the brakes to ensure they are functioning properly. Lubricate the chain and gears if necessary. If you're unsure about the bike's condition, consider taking it to a professional for a tune-up.</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold">What rules should I follow when riding my bike?</div>
+                    <div class="collapse-content text-sm">Always wear a helmet and follow traffic laws. Use hand signals to indicate turns and stops. Stay visible by wearing bright colors and using lights at night. Be aware of your surroundings and watch for pedestrians and other vehicles.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 flex max-md:flex-col md:justify-around mx-auto">
+        <div class="inline-flex flex-col justify-start items-start gap-6 overflow-hidden">
+            <div class="flex flex-col justify-start items-start gap-3 overflow-hidden">
+                <div class="inline-flex justify-start items-center gap-6 overflow-hidden">
+                    <div class="justify-start text-white text-base font-normal font-['Manrope'] leading-relaxed">Download Now</div>
+                    <div class="justify-start text-white text-base font-normal font-['Manrope'] leading-relaxed">License</div>
+                </div>
+                <div class="inline-flex justify-start items-center gap-6 overflow-hidden">
+                    <div class="justify-start text-white text-base font-normal font-['Manrope'] leading-relaxed">About</div>
+                    <div class="justify-start text-white text-base font-normal font-['Manrope'] leading-relaxed">Features</div>
+                    <div class="justify-start text-white text-base font-normal font-['Manrope'] leading-relaxed">Pricing</div>
+                    <div class="justify-start text-white text-base font-normal font-['Manrope'] leading-relaxed">Careers</div>
+                    <div class="justify-start text-white text-base font-normal font-['Manrope'] leading-relaxed">Help</div>
+                    <div class="justify-start text-white text-base font-normal font-['Manrope'] leading-relaxed">Privacy Policy</div>
+                </div>
+            </div>
+            <div class="justify-start text-gray-300 text-sm font-normal font-['Manrope'] leading-normal">© 2020 bike. All rights reserved</div>
+        </div>
+        <nav>
+            <div class="w-40 justify-start text-gray-300 text-lg font-medium font-['Manrope'] leading-7">Get the App</div>
+            <div class="flex flex-col gap-4">
+                <a>
+                    <img src="./images/others/android.png" class="w-32 h-auto">
+                </a>
+                <a>
+                    <img src="./images/others/ios.png" class="w-32 h-auto">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
