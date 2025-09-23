@@ -1,73 +1,58 @@
-import React, { useState } from 'react';
+import React from 'react';
+import PillNav from './PillNav';
 
 const Navbar: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const items = [
+    {
+      label: "Home",
+      href: "#home",
+      ariaLabel: "Go to home section"
+    },
+    {
+      label: "About",
+      href: "#about",
+      ariaLabel: "Go to about section"
+    },
+    {
+      label: "Projects", 
+      href: "#projects",
+      ariaLabel: "Go to projects section"
+    },
+    {
+      label: "Contact",
+      href: "#contact",
+      ariaLabel: "Go to contact section"
+    }
+  ];
 
-    return (
-        <nav className="bg-white shadow-lg">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-16">
-                    <div className="flex items-center">
-                        <div className="flex-shrink-0">
-                            <h1 className="text-xl font-bold text-gray-800">Portfolio</h1>
-                        </div>
-                    </div>
-                    
-                    {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-8">
-                        <a href="#home" className="text-gray-700 hover:text-blue-600 transition duration-300">
-                            Home
-                        </a>
-                        <a href="#about" className="text-gray-700 hover:text-blue-600 transition duration-300">
-                            About
-                        </a>
-                        <a href="#projects" className="text-gray-700 hover:text-blue-600 transition duration-300">
-                            Projects
-                        </a>
-                        <a href="#contact" className="text-gray-700 hover:text-blue-600 transition duration-300">
-                            Contact
-                        </a>
-                    </div>
+  // Create a minimal placeholder logo (since PillNav requires one but we don't want to show it)
+  const placeholderLogo = "data:image/svg+xml;base64," + btoa(`
+    <svg width="1" height="1" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1" height="1" fill="transparent"/>
+    </svg>
+  `);
 
-                    {/* Mobile menu button */}
-                    <div className="md:hidden flex items-center">
-                        <button
-                            onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-700 hover:text-blue-600 focus:outline-none"
-                        >
-                            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                {isOpen ? (
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                ) : (
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                                )}
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            {/* Mobile Navigation */}
-            {isOpen && (
-                <div className="md:hidden">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-                        <a href="#home" className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition duration-300">
-                            Home
-                        </a>
-                        <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition duration-300">
-                            About
-                        </a>
-                        <a href="#projects" className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition duration-300">
-                            Projects
-                        </a>
-                        <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition duration-300">
-                            Contact
-                        </a>
-                    </div>
-                </div>
-            )}
-        </nav>
-    );
+  return (
+    <div className='flex'>
+        <div className=''>
+            JU4700
+        </div>
+        <div className="flex justify-start py-4 ml-10">
+        <PillNav
+            logo={placeholderLogo}
+            logoAlt=""
+            items={items}
+            baseColor="#fff"
+            pillColor="#0D0716"
+            hoveredPillTextColor="#0D0716"
+            pillTextColor="#fff"
+            ease="power3.easeOut"
+            initialLoadAnimation={true}
+            className="!static !transform-none !left-auto !w-auto [&>nav>a[aria-label='Home']]:hidden [&>nav>div]:!ml-0"
+        />
+        </div>
+    </div>
+  );
 };
 
 export default Navbar;
