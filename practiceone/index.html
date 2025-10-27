@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./images/fav.png">
+    <title>Electromart</title>
+</head>
+<body>
+    <div class="flex justify-center">
+        <div class="lg:max-w-[1400px] navbar bg-base-100 shadow-sm m-5 rounded-[16px] shadow-[0px_3px_22px_2px_rgba(0,55,22,0.20)]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                    tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">Electromart</a>
+            </div>
+            
+            <div class="navbar-end ">
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    </ul>
+                </div>
+                <a class="btn rounded-[8px]">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home flex justify-center">
+        <div class="flex justify-between lg:max-w-[1400px] m-5 p-5 shadow-sm rounded-[16px] shadow-[0px_3px_22px_2px_rgba(0,55,22,0.20)]">
+            <div class="lg:max-w-[1400px] p-5">
+                <h1 class="text-5xl font-bold">Welcome to Electromart</h1>
+                <p class="py-6 text-lg">Your one-stop shop for all electronic needs.</p>
+                <button class="btn btn-primary btn-lg rounded-[8px]">Shop Now</button>
+            </div>
+            <div class="lg:max-w-[1400px]">
+                <img src="./images/pr1.png" alt="Electronics Image" class="w-150"/>
+                <div class="py-6 text-lg">
+                    Discover a wide range of electronics from top brands at unbeatable prices. Whether you're looking for the latest gadgets or essential accessories, Electromart has you covered.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
