@@ -33,7 +33,7 @@
                         <th>Password</th>
                     </tr>
                     </thead>
-                        <tbody>
+                        <tbody id="tabd">
                             <!-- row 1 -->
                             <tr>
                                 <th>1</th>
@@ -47,10 +47,31 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script>
+        function addtotable(var1, var2) {
+            const tbody = document.getElementById('tabd');
+            const newRow = `
+                <tr>
+                    <th>${tbody.children.length + 1}</th>
+                    <td>${var1}</td>
+                    <td>${var2}</td>
+                </tr>
+            `;
+            tbody.insertAdjacentHTML('beforeend', newRow);
+            // Create a new row element
+            // const newRowElement = document.createElement('tr');
+            // Use innerHTML to set the content using your template literal string
+            // newRowElement.innerHTML = `
+            //    <th>${tbody.children.length + 1}</th>
+            //    <td>${var1}</td>
+            //    <td>${var2}</td>
+            //`;
+            // Now you can safely use appendChild() because newRowElement is a Node
+            // tbody.appendChild(newRowElement); 
+        }
         document.getElementById('login').addEventListener('click', function() {
             const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            alert(`Email: ${email}\nPassword: ${password}`);
+            const password = parseFloat(document.getElementById('password').value);
+            addtotable(email, password);
         });
     </script>
 </body>
