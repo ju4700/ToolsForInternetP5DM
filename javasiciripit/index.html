@@ -11,6 +11,11 @@
 <body>
     <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex justify-between flex-col lg:flex-row gap-8">
+
+            <button class="btn">
+                Inbox <div id="bal" class="badge badge-sm">2000</div>
+            </button>
+
             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div class="card-body">
                     <fieldset class="fieldset">
@@ -22,6 +27,27 @@
                     <button id="login" class="btn btn-neutral mt-4">Login</button>
                     </fieldset>
                 </div>
+                <div class="flex justify-center items-center gap-2 p-4 border-t border-base-200">
+                    <div>
+                        <label class="input validator join-item">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                            stroke-width="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                            >
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </g>
+                        </svg>
+                        <input id="curb" type="number" placeholder="mail@site.com" required />
+                        </label>
+                        <div class="validator-hint hidden">Enter valid email address</div>
+                    </div>
+                    <button id="dep" class="btn btn-neutral join-item">Deposit</button>
+                </div>
             </div>
             <div class="rounded-box border border-base-200 bg-base-100 w-150 shadow-2xl">
                 <table class="table">
@@ -31,6 +57,8 @@
                         <th></th>
                         <th>Email</th>
                         <th>Password</th>
+                        <th>Timestamp</th>
+                        <th>Actions</th>
                     </tr>
                     </thead>
                         <tbody id="tabd">
@@ -38,7 +66,7 @@
                             <tr>
                                 <th>1</th>
                                 <td>Cy Ganderton</td>
-                                <td>Quality Control Specialist</td>
+                                <td>23523t</td>
                             </tr>
                         </tbody>
                 </table>
@@ -54,24 +82,32 @@
                     <th>${tbody.children.length + 1}</th>
                     <td>${var1}</td>
                     <td>${var2}</td>
+                    <td>${new Date().toLocaleString()}</td>
+                    <td><button onclick="deleteRow(this)" class="btn btn-xs btn-error">Delete</button></td>
                 </tr>
             `;
             tbody.insertAdjacentHTML('beforeend', newRow);
-            // Create a new row element
+            
             // const newRowElement = document.createElement('tr');
-            // Use innerHTML to set the content using your template literal string
             // newRowElement.innerHTML = `
             //    <th>${tbody.children.length + 1}</th>
             //    <td>${var1}</td>
             //    <td>${var2}</td>
             //`;
-            // Now you can safely use appendChild() because newRowElement is a Node
             // tbody.appendChild(newRowElement); 
         }
         document.getElementById('login').addEventListener('click', function() {
             const email = document.getElementById('email').value;
             const password = parseFloat(document.getElementById('password').value);
             addtotable(email, password);
+        });
+
+        document.getElementById('dep').addEventListener('click', function(){
+            const val3 = parseFloat(document.getElementById('curb').value);
+            if(val3 >= 0){
+                const bala = parseFloat(document.getElementById('bal').innerText);
+                document.getElementById('bal').innerText = bala + val3;
+            }
         });
     </script>
 </body>
